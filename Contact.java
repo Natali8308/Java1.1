@@ -108,5 +108,5 @@ public class Contact {
             contactIndex++;
         }
     }
-}
+}//
 

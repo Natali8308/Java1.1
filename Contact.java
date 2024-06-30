@@ -16,7 +16,7 @@ public class Contact {
             System.out.println("4. Выйти");
             System.out.print("Выберите действие: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // считываем лишний перевод строки
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -47,7 +47,7 @@ public class Contact {
                     case 2:
                     System.out.print("Введите индекс контакта для редактирования: ");
                     int index = scanner.nextInt();
-                    scanner.nextLine(); // считываем лишний перевод строки
+                    scanner.nextLine(); 
                     if (index >= 0 && index < contacts.size()) {
                         System.out.print("Введите новое имя для контакта: ");
                         String newname = scanner.nextLine();
@@ -80,7 +80,7 @@ public class Contact {
                 case 3:
                     System.out.print("Введите индекс контакта для удаления: ");
                     int deleteIndex = scanner.nextInt();
-                    scanner.nextLine(); // считываем лишний перевод строки
+                    scanner.nextLine(); 
                     if (deleteIndex >= 0 && deleteIndex < contacts.size()) {
                         contacts.remove(deleteIndex);
                         System.out.println("Контакт успешно удален");
